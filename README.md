@@ -1,4 +1,4 @@
-# Project2
+# ShelterMatch
 
 ShelterMatch is an application that matches owners/potential dog owners with sheltered dogs.
 
