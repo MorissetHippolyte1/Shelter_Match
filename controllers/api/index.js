@@ -4,9 +4,12 @@ const { Dogs, Owner, PotentialOwner } = require('../../models');
 
 router.get('/', async (req, res) => {
     try {
-        const PotentialOwnerData = await PotentialOwner.findAll();
+        const potentialOwnerData = await PotentialOwner.findAll();
         console.log(potentialOwnerData);
+        const serializedPotentialOwner = potentialOwnerData.map((potentialOwner) => potentialOwner.get({ plain: true }));
+        console.log(serializedPotentialOwner);
         return res.status(200).json(potentialOwnerData);
+        res.render("routes work!", { serializedPotentialOwner });
     } catch(err) {
         return res.status(500).json(err);
     }

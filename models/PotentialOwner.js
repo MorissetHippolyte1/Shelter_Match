@@ -23,7 +23,7 @@ PotentialOwner.init(
         dog_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'Dog',
+              model: 'dogs',
               key: 'id',
             },
     }, 
@@ -33,7 +33,7 @@ PotentialOwner.init(
         timestamps: true,
         underscored: true,
         freezeTableName: true,
-        modelName: 'Owner',
+        modelName: 'potentialOwner',
 
     });
 

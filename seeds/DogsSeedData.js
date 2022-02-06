@@ -1,6 +1,7 @@
 const { Dogs } = require('../models');
 
 const dogsdata =
+console.log(dogsdata);
 [
     {
       "name": "Tator",

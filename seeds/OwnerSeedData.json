@@ -1,22 +1,22 @@
 [
     {
-      "owners_name": "Johnson Family",
+      "owner_name": "Johnson Family",
       "dogs_name": "Bucky"
     },
     {
-        "owners_name": "Smith Family",
+        "owner_name": "Smith Family",
         "dogs_name": "Lola"
     },
     {
-        "owners_name": "Terri",
+        "owner_name": "Terri",
         "dogs_name": "Fizz"
     },
     {
-        "owners_name": "Jenna",
+        "owner_name": "Jenna",
         "dogs_name": "Peanut"
     },
     {
-        "owners_name": "Todd",
+        "owner_name": "Todd",
         "dogs_name": "Kane"
     }
   ]
