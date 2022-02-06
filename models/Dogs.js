@@ -32,7 +32,17 @@ Dogs.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-    }, 
+        potentialowner_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'potentialowner',
+                key: 'id',
+            }
+        }
+
+
+        },
+    
     {
         sequelize,
         timestamps: true,
