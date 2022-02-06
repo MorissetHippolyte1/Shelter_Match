@@ -12,8 +12,9 @@ Technologies used to develop ShelterMatch included:
  Handlebars were used to create the UI
  Passport, an authentication middleware for Node.js (a techology we chose that was not discussed in class).
  Heroku for deployment
+ We followed the MVC model (Model, Views, and Controllers) to develop the structure of our application. 
 
-Our team had the pleasure of debugging challenges while developing this application. The first was connecting the server. To correct this, we simply examined our code for syntacitical errors. The next being unsuring that out tables were properly read by Mysql. 
+Our team had the pleasure of debugging challenges while developing this application. The first was connecting the server. To correct this, we simply examined our code for syntacitical errors. The next being unsuring that out tables were properly read by Mysql. This issue took a lot of brainstorming and problem-solving in order to correct.  
 
 # How to install and Run ShelterMatch
 
@@ -24,6 +25,7 @@ When a user first opens our site, a login requests their name and email. The use
 # How to Use ShelterMatch
 
 ShelterMatch was designed with the intention for easy assessibilty to the public. 
+The user uses our app for a faster and more efficent way to find a pet to adopt without the hassle of a stepping foot into to a shelter. 
 
 # Credits
 
