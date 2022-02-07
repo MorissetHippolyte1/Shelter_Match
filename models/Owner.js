@@ -20,10 +20,10 @@ Owner.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        potentialOwner_id: {
+        potentialowner_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'Owner',
+              model: 'owner',
               key: 'id',
             },
     }, 
@@ -33,7 +33,7 @@ Owner.init(
         timestamps: true,
         underscored: true,
         freezeTableName: true,
-        modelName: 'Owner',
+        modelName: 'owner',
 
     });
 
