@@ -52,4 +52,4 @@ Dogs.init(
 
     });
 
-    // module.exports = Dogs;
+    module.exports = Dogs;

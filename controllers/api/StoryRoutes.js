@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
-// const Story = require('../../models/Story');
 
 
 // route to get all stories
@@ -9,7 +8,7 @@ router.get('/', async (req, res) => {
         res.json(err);
       });
         const story = storyData.map((story) => story.get({ plain: true }));
-        res.render('all', { stories });
+        res.render('homepage', { story });
       });
   
   // route to get one story
