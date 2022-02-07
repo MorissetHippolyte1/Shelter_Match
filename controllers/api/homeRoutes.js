@@ -48,7 +48,7 @@ router.get('/potientialOwner/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/profile', async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const potentialOwnerData = await User.findByPk(req.session.user_id, {

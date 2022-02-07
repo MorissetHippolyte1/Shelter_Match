@@ -1,0 +1,55 @@
+<div class="tellStory-card">
+  <div class="tellStory-card-header">
+   
+  </div>
+  <div class="card-body">
+    <p>
+      Tell us your Happy Home Story:
+      {{story}}
+    </p>
+    <p>
+      Name:
+      {{owner_name}}
+    </p>
+    <p>
+      Dog:
+      {{dog_name}}
+    </p>
+  </div>
+</div>
+
+<div class="edit-story-container">
+  <h2>
+    Share Story
+  </h2>
+  <form class="edit-story-form">
+    <label for="dog_name">
+      Dog Name:
+    </label>
+    <br />
+    <textarea id="dog_name" name="dog_name" rows="2" cols="30">
+      {{dog_name}}
+    </textarea>
+    <br />
+    <label for="story">
+      Story:
+    </label>
+    <br />
+    <textarea id="story" name="story" rows="5" cols="30">
+      {{story}}
+    </textarea>
+    <br />
+    <label for="owner_name">
+      Owner Name:
+    </label>
+    <br />
+    <textarea id="owner_name" name="owner_name" rows="2" cols="30">
+      {{owner_name}}
+    </textarea>
+    <br />
+    <button type="submit" value="Submit">
+      Submit
+    </button>
+  </form>
+</div>
+<script src="/js/editstory.js"></script>

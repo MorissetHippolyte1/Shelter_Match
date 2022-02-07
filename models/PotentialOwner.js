@@ -48,7 +48,6 @@ PotentialOwner.init(
 
 
     },
-    
     {
         sequelize,
         timestamps: true,
@@ -70,7 +69,7 @@ PotentialOwner.init(
     
     app.get('/Dogs', (req,res) => {
         res.send();
-    });no
+    });
 
     module.exports = PotentialOwner;
 
