@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
-const Story = require('../../models/Story');
+// const Story = require('../../models/Story');
 
 
 // route to get all stories

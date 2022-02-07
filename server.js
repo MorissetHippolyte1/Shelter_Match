@@ -2,7 +2,6 @@ const express = require("express");
 const sequelize = require("./config/connection");
 const exphbs = require('express-handlebars');
 const path = require("path");
-const routes = require("./controllers/api/Story.js");
 
 
 const app = express();
@@ -13,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,'public')));
 
-app.use(routes);
+app.use(require("./controllers/api/StoryRoutes"));
 
 const hbs = exphbs.create({});
 app.engine('handlebars', hbs.engine);

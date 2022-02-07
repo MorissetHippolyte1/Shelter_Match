@@ -1,8 +1,8 @@
-const { get } = require("express/lib/response");
+// const { get } = require("express/lib/response");
 
-router.get("/potentialOwner:id");
+// router.get("/potentialOwner:id");
 
-router.get("/dogs:id");
+// router.get("/dogs:id");
 
-router.get("/owners:id");
+// router.get("/owners:id");
 
