@@ -20,10 +20,10 @@ Owner.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        potentialOwner_id: {
+        potentialowner_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'potentialOwner',
+              model: 'owner',
               key: 'id',
             },
     }, 
