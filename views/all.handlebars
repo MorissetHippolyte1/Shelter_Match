@@ -1,0 +1,61 @@
+<div class="homes-container">
+  <div class="card-header col-md-10">
+    <h2>
+    Our Happy Homes
+    </h2>
+  </div>
+  <!-- For each dog in the array of dog objects, the following <div> will be rendered. -->
+  {{#each dog as |dog|}}
+    <div class="dog col-md-5">
+      <!-- We use dog.id instead of <od> and <li> elements. -->
+      <p>
+        {{dog.id}}.
+        {{dog.dog_name}}
+      </p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        Owner:
+        {{dog.owner_name}}
+      </p>
+    </div>
+  {{/each}}
+</div>
+ <div class="add-dog-container">
+    <h2>
+      Share your experience with ShelterMatch
+    </h2>
+    <form class="new-dog-form">
+      <label for="dog_name">
+        Dog Name:
+      </label>
+      <br />
+      <textarea id="dog_name" name="dog_name" rows="2" cols="30">
+      {{dog_name}}
+    </textarea>
+      <br />
+      <label for="story">
+        Story:
+      </label>
+      <br />
+      <textarea id="story" name="story" rows="5" cols="30">
+      {{story}}
+    </textarea>
+      <br />
+      <label for="owner_name">
+        Owner Name:
+      </label>
+      <br />
+      <textarea id="owner_name" name="owner_name" rows="2" cols="30">
+      {{_name}}
+    </textarea>
+      <br />
+      
+      <button type="submit" value="Submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/addstory.js"></script>
