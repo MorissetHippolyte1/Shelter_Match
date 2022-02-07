@@ -8,9 +8,9 @@ const sequelize = new Sequelize(
     {
         host: "localhost",
         dialect: "mysql",
-        // dialectOptions: {
-        //     socketPath: '/tmp/mysql.sock'
-        // },
+        dialectOptions: {
+            socketPath: '/tmp/mysql.sock'
+        },
         port: 3306
     }
 );
