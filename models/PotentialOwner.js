@@ -1,7 +1,21 @@
 const {Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection');
+// const express = require('express');
+// const passport = require ('passport');
+// require('./auth');
 
+// const app = express();
+
+// app.get('/login', (req,res) => {
+//     res.send('<a href="/auth/google">Authenticate with Google</a>')
+// });
+// app.get('/auth/google', 
+//     passport.authenticate('google', { scope: ['email', 'profile']}));
+
+
+// app.get('/Dogs', (req,res) => {
+//     res.send();
+// });
 class PotentialOwner extends Model {}
 
 PotentialOwner.init(
@@ -19,18 +33,21 @@ PotentialOwner.init(
         email: {
             type: DataTypes.INTEGER,
             allowNull: false,
+            unique: true,
+            validate: {
+                isEmail: true,
+            }
         },
-<<<<<<< HEAD
-        dog_id: {
-            type: DataTypes.INTEGER,
-            references: {
-              model: 'dogs',
-              key: 'id',
+
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len:[8],
             },
-    }, 
-=======
-        
->>>>>>> 7d4e63df288e657abc1c9e6953fab3d2fb7c2457
+        }
+
+
     },
     
     {
@@ -38,12 +55,24 @@ PotentialOwner.init(
         timestamps: true,
         underscored: true,
         freezeTableName: true,
-<<<<<<< HEAD
-        modelName: 'potentialOwner',
-=======
+
+
         modelName: 'potentialowner',
->>>>>>> 7d4e63df288e657abc1c9e6953fab3d2fb7c2457
+
 
     });
 
+    // app.get('/login', (req,res) => {
+    //     res.send('<a href="/auth/google">Authenticate with Google</a>')
+    // });
+    // app.get('/auth/google', 
+    //     passport.authenticate('google', { scope: ['email', 'profile']}));
+    
+    
+    // app.get('/Dogs', (req,res) => {
+    //     res.send();
+    // });no
+
     module.exports = PotentialOwner;
+
+    // app.listen(3001,() => console.log('listen'));
