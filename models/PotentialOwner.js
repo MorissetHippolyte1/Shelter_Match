@@ -38,6 +38,7 @@ PotentialOwner.init(
                 isEmail: true,
             }
         },
+
         password: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -45,7 +46,8 @@ PotentialOwner.init(
                 len:[8],
             },
         }
-        
+
+
     },
     
     {
@@ -53,7 +55,10 @@ PotentialOwner.init(
         timestamps: true,
         underscored: true,
         freezeTableName: true,
+
+
         modelName: 'potentialowner',
+
 
     });
 
