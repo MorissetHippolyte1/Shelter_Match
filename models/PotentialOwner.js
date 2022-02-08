@@ -20,21 +20,30 @@ PotentialOwner.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+<<<<<<< HEAD
         dog_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'Dog',
+              model: 'dogs',
               key: 'id',
             },
     }, 
+=======
+        
+>>>>>>> 7d4e63df288e657abc1c9e6953fab3d2fb7c2457
     },
+    
     {
         sequelize,
         timestamps: true,
         underscored: true,
         freezeTableName: true,
-        modelName: 'Owner',
+<<<<<<< HEAD
+        modelName: 'potentialOwner',
+=======
+        modelName: 'potentialowner',
+>>>>>>> 7d4e63df288e657abc1c9e6953fab3d2fb7c2457
 
     });
 
-    module.exports = Owner;
+    module.exports = PotentialOwner;

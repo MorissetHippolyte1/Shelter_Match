@@ -23,7 +23,7 @@ Owner.init(
         potentialOwner_id: {
             type: DataTypes.INTEGER,
             references: {
-              model: 'PotentialOwner',
+              model: 'Owner',
               key: 'id',
             },
     }, 

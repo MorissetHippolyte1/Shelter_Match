@@ -28,13 +28,27 @@ Dogs.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-    }, 
+        sex: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        potentialowner_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'potentialowner',
+                key: 'id',
+            }
+        }
+
+
+        },
+    
     {
         sequelize,
         timestamps: true,
         underscored: true,
         freezeTableName: true,
-        modelName: 'Dogs',
+        modelName: 'dogs',
 
     });
 
