@@ -16,11 +16,12 @@
   "bugs": {
     "url": "https://github.com/rwood022/Project2/issues"
   },
-  "homepage": "https://github.com/rwood022/Project2#readme",
+  "homepage": "https://github.com/rwood022/github.io/ShelterMatch",
   "dependencies": {
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
     "express-session": "^1.17.2",
+    "gh-pages": "^3.2.3",
     "mysql2": "^2.3.3",
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
